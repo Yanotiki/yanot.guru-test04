@@ -24,12 +24,7 @@ public class SoftAssertions {
 
         // перейти в раздел wiki
         // нажать enter
-        $$(".menu-item")
-                .get(8)
-                .pressEnter();
-
-        //проверить что в заголовке встречается wiki results
-        $(By.partialLinkText("wiki results"));
+        $(byText("Wikis")).pressEnter();
 
         //убедится, что в списке страниц (Pages) есть страница SoftAssertions
         $("#wiki_search_results")
